@@ -1,0 +1,49 @@
+services:
+  client:
+    container_name: client
+    build: ./client
+    networks:
+      - local_dev
+    volumes:
+      - ./client:/var/www/html
+  server:
+    container_name: server
+    build: 
+      context: ./server
+    networks:
+      - local_dev
+    volumes:
+      - ./server:/var/www/html
+  nginx:
+    container_name: nginx
+    build:
+      context: ./nginx
+    restart: always
+    volumes:
+      - ./client:/var/www/html
+      - ./server:/var/www/html
+    ports:
+      - "80:80"
+      - "443:443"
+      - "5173:5173"
+    networks:
+      - local_dev
+  mariadb:
+    image: mariadb:latest
+    container_name: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: weedtrust
+      MYSQL_USER: weedtrust
+      MYSQL_PASSWORD: weedtrust
+    ports:
+      - "3306:3306"
+    volumes:
+      - /Users/egalan/persistent-storage:/var/lib/mysql
+      - /Users/egalan/databases/:/databases
+    networks:
+      - local_dev
+    restart: always
+networks:
+  local_dev:
+    driver: bridge
