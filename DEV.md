@@ -6,6 +6,7 @@
 - Composer 2.7.7
 - PHP 8.3.10
 - XCode
+- Android Studio
 
 ## Commands
 ### Client
