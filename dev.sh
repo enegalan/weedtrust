@@ -1,7 +1,9 @@
 #!/bin/bash
 ############################ NOTE ############################
 ###                  php artisan serve                     ###
-###          should be executed in other terminal          ###     
+###          should be executed in other terminal          ###
+###                         AND                            ###
+###     this script should be executed ONLY in LOCAL       ###
 ##############################################################
 show_menu() {
     echo "Select an option (1-4):"
