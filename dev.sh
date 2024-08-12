@@ -16,6 +16,9 @@ handle_selection() {
     if [ "$1" != "4" ]; then 
         cd client
     fi
+    if [ "$1" != "4" && "$1" != "1" ]; then 
+        npx cap sync
+    fi
     case $1 in
         1)
             echo "Selected: Local development"
