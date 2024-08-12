@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:.."
+      name = "..">
+      <FileRef
+         location = "group:App.xcodeproj">
+      </FileRef>
+      <Group
+         location = "group:App"
+         name = "App">
+         <Group
+            location = "group:Assets.xcassets"
+            name = "Assets.xcassets">
+            <Group
+               location = "group:AppIcon.appiconset"
+               name = "AppIcon.appiconset">
+               <FileRef
+                  location = "group:AppIcon-512@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <Group
+               location = "group:Splash.imageset"
+               name = "Splash.imageset">
+               <FileRef
+                  location = "group:splash-2732x2732.png">
+               </FileRef>
+               <FileRef
+                  location = "group:splash-2732x2732-1.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+               <FileRef
+                  location = "group:splash-2732x2732-2.png">
+               </FileRef>
+            </Group>
+         </Group>
+         <Group
+            location = "group:Base.lproj"
+            name = "Base.lproj">
+            <FileRef
+               location = "group:LaunchScreen.storyboard">
+            </FileRef>
+            <FileRef
+               location = "group:Main.storyboard">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:config.xml">
+         </FileRef>
+         <Group
+            location = "group:public"
+            name = "public">
+            <FileRef
+               location = "group:index.html">
+            </FileRef>
+            <FileRef
+               location = "group:cordova.js">
+            </FileRef>
+            <FileRef
+               location = "group:favicon.png">
+            </FileRef>
+            <FileRef
+               location = "group:manifest.json">
+            </FileRef>
+            <FileRef
+               location = "group:cordova_plugins.js">
+            </FileRef>
+            <Group
+               location = "group:assets"
+               name = "assets">
+               <FileRef
+                  location = "group:swipe-back-U1SmtMUt.js">
+               </FileRef>
+               <FileRef
+                  location = "group:pwa-camera-modal.entry-legacy-BTjDhkzB.js">
+               </FileRef>
+               <FileRef
+                  location = "group:md.transition-legacy-CxCLPjmn.js">
+               </FileRef>
+               <FileRef
+                  location = "group:swipe-back-legacy-Bb8OH5dI.js">
+               </FileRef>
+               <FileRef
+                  location = "group:ios.transition-legacy-7JmI2KTB.js">
+               </FileRef>
+               <FileRef
+                  location = "group:pwa-action-sheet.entry-CLphCyFi.js">
+               </FileRef>
+               <FileRef
+                  location = "group:ios.transition-DWAg05k8.js">
+               </FileRef>
+               <FileRef
+                  location = "group:polyfills-legacy-DvfxxsAe.js">
+               </FileRef>
+               <FileRef
+                  location = "group:pwa-action-sheet.entry-legacy-DF-iTkOm.js">
+               </FileRef>
+               <FileRef
+                  location = "group:focus-visible-legacy-CdO5cX4I.js">
+               </FileRef>
+               <FileRef
+                  location = "group:pwa-camera-modal-instance.entry-legacy-CnaLQfyh.js">
+               </FileRef>
+               <FileRef
+                  location = "group:md.transition-C6FRuhnF.js">
+               </FileRef>
+               <FileRef
+                  location = "group:pwa-toast.entry-legacy-D4EKLy_z.js">
+               </FileRef>
+               <FileRef
+                  location = "group:keyboard2-legacy-DVwjHPTG.js">
+               </FileRef>
+               <FileRef
+                  location = "group:index9-legacy-mkQw-VYx.js">
+               </FileRef>
+               <FileRef
+                  location = "group:index-D-yhsYRx.js">
+               </FileRef>
+               <FileRef
+                  location = "group:pwa-camera-modal.entry-CL_3o_Nz.js">
+               </FileRef>
+               <FileRef
+                  location = "group:status-tap-BrB9e16p.js">
+               </FileRef>
+               <FileRef
+                  location = "group:index9-BRrfJ4Cg.js">
+               </FileRef>
+               <FileRef
+                  location = "group:pwa-toast.entry-DA7iddBG.js">
+               </FileRef>
+               <FileRef
+                  location = "group:index-jFSyunOD.css">
+               </FileRef>
+               <FileRef
+                  location = "group:pwa-camera.entry-legacy-2QSkYe4G.js">
+               </FileRef>
+               <FileRef
+                  location = "group:pwa-camera-modal-instance.entry-DgvVh6m0.js">
+               </FileRef>
+               <FileRef
+                  location = "group:status-tap-legacy-uOsDlQ1b.js">
+               </FileRef>
+               <FileRef
+                  location = "group:index-legacy-DsUROPye.js">
+               </FileRef>
+               <FileRef
+                  location = "group:focus-visible-supuXXMI.js">
+               </FileRef>
+               <FileRef
+                  location = "group:keyboard2-Dql7low0.js">
+               </FileRef>
+               <FileRef
+                  location = "group:pwa-camera.entry-DrSZi33n.js">
+               </FileRef>
+               <FileRef
+                  location = "group:input-shims-legacy-Cot1DT9X.js">
+               </FileRef>
+               <FileRef
+                  location = "group:input-shims-DbJNetaA.js">
+               </FileRef>
+            </Group>
+         </Group>
+         <FileRef
+            location = "group:capacitor.config.json">
+         </FileRef>
+         <FileRef
+            location = "group:AppDelegate.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:App.xcworkspace">
+      </FileRef>
+      <FileRef
+         location = "group:Podfile">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:App.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>
