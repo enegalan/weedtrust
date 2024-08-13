@@ -1,4 +1,4 @@
-import { home, radio, library, search, leaf } from 'ionicons/icons';
+import { homeOutline, personOutline, leafOutline, chatbubbleEllipsesOutline } from 'ionicons/icons';
 import Home from './pages/Home';
 import Crops from './pages/Crops';
 import Chat from './pages/Chat';
@@ -7,28 +7,28 @@ import Account from './pages/Account';
 const Tabs = [
     {
         'id': 'home',
-        'icon': home,
+        'icon': homeOutline,
         'label': 'Home',
         'href': '/home',
         'page': <Home />,
     },
     {
         'id': 'crops',
-        'icon': leaf,
+        'icon': leafOutline,
         'label': 'My Crops',
         'href': '/crops',
         'page': <Crops />,
     },
     {
         'id': 'chat',
-        'icon': library,
+        'icon': chatbubbleEllipsesOutline,
         'label': 'Chat',
         'href': '/chat',
         'page': <Chat />,
     },
     {
         'id': 'account',
-        'icon': search,
+        'icon': personOutline,
         'label': 'Account',
         'href': '/account',
         'page': <Account />,
