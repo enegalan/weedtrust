@@ -1,6 +1,6 @@
-import { IonButtons, IonMenuButton, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonContent, IonButtons, IonMenuButton, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 
-const Home: React.FC = () => {
+const Crops: React.FC = () => {
   return (
     <IonPage id='main-content'>
       <IonHeader>
@@ -8,7 +8,7 @@ const Home: React.FC = () => {
           <IonButtons slot='start'>
             <IonMenuButton></IonMenuButton>
           </IonButtons>
-          <IonTitle>Home</IonTitle>
+          <IonTitle>Crops</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent className='ion-padding' fullscreen>
@@ -18,4 +18,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default Crops;

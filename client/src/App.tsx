@@ -3,6 +3,10 @@ import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import Home from './pages/Home';
 
+/* Components  */
+import Toolbar from './components/Toolbar';
+import Menu from './components/Menu';
+
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
 
@@ -33,7 +37,7 @@ import '@ionic/react/css/palettes/dark.system.css';
 /* Theme variables */
 import './theme/variables.css';
 
-setupIonicReact();
+setupIonicReact({ mode: 'md'});
 
 const App: React.FC = () => (
   <IonApp>
@@ -47,6 +51,8 @@ const App: React.FC = () => (
         </Route>
       </IonRouterOutlet>
     </IonReactRouter>
+    <Menu />
+    <Toolbar />
   </IonApp>
 );
 

@@ -18,5 +18,6 @@ module.exports = {
     'react/jsx-filename-extension': 'off',
     '@typescript-eslint/no-empty-interface': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off',
+    'react/prop-types': 'off',
   }
 }
