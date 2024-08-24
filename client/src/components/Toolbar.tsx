@@ -3,17 +3,21 @@ import { IonReactRouter } from '@ionic/react-router';
 import { Route } from 'react-router';
 
 import { Tabs } from '../constants';
+import { checkSession } from '../api/auth';
 
 function Toolbar() {
     return (
         <IonReactRouter>
             <IonTabs>
                 <IonRouterOutlet>
-                    {Tabs.map((tab) => {
-                        return (
-                            <Route render={() => tab.page} key={tab.id} path={tab.href} exact />
-                        );
-                    })}
+                {Tabs.filter(() => (checkSession())).map((tab) => (
+                    <Route
+                        key={tab.id}
+                        path={tab.href}
+                        exact
+                        render={() => tab.page}
+                    />
+                ))}
                 </IonRouterOutlet>
                 <IonTabBar slot='bottom'>
                     {Tabs.map((tab) => {

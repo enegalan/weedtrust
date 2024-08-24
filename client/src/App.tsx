@@ -1,11 +1,18 @@
 import { Redirect, Route } from 'react-router-dom';
 import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
+
+/* Pages */
 import Home from './pages/Home';
+import Login from './pages/Auth/Login';
 
 /* Components  */
 import Toolbar from './components/Toolbar';
 import Menu from './components/Menu';
+
+/* API Calls */
+import { checkSession } from './api/auth';
+
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -39,21 +46,37 @@ import './theme/variables.css';
 
 setupIonicReact({ mode: 'md'});
 
-const App: React.FC = () => (
-  <IonApp>
-    <IonReactRouter>
-      <IonRouterOutlet>
-        <Route exact path="/home">
-          <Home />
-        </Route>
-        <Route exact path="/">
-          <Redirect to="/home" />
-        </Route>
-      </IonRouterOutlet>
-    </IonReactRouter>
-    <Menu />
-    <Toolbar />
-  </IonApp>
-);
+const App: React.FC = () => {
+  const sessionOpened = checkSession();
+  return (
+    <IonApp>
+      <IonReactRouter>
+        <IonRouterOutlet>
+          {sessionOpened ? (
+            <>
+              <Route exact path="/home">
+                <Home />
+              </Route>
+              <Route exact path="/">
+                <Redirect to="/home" />
+              </Route>
+            </>
+          ) : (
+            <>
+              <Route exact path="/">
+                <Login />
+              </Route>
+              <Route exact path="/home">
+                <Redirect to="/" />
+              </Route>
+            </>
+          )}
+        </IonRouterOutlet>
+      </IonReactRouter>
+      <Menu />
+      <Toolbar />
+    </IonApp>
+  );
+}
 
 export default App;
